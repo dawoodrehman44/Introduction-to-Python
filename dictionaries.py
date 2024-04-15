@@ -1,6 +1,6 @@
 print("Hello world")
 
-# writing first dictionary
+# Writing first dictionary
 this_dic = {
     "brand" : "Ford",
     "model" : "Mustan",
