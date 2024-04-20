@@ -1,0 +1,29 @@
+# While Loop
+i = 1
+while i < 6:
+    print(i)
+    i +=1
+
+# Exit the loop when i is 4
+i = 1
+while i < 6:
+    print(i)
+    if i == 4:
+        break
+    i += 1
+
+# Continue statment
+i = 1
+while i < 6:
+    i += 1
+    if i == 4:
+        continue # continue function jump the current value when reached that particular value 
+    print(i)
+
+# else statement
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")
