@@ -66,3 +66,29 @@ a = 23
 b = 100
 if b > a:
     pass
+
+## EXCERCISE
+score = float(input("Enter the student's score: "))
+
+if score >= 90:
+    grade = 'A'
+elif score >= 80:
+    grade = 'B'
+elif score >= 70:
+    grade = 'C'
+elif score >= 60:
+    grade = 'D'
+else:
+    grade = 'F'
+
+print("The student's grade is:", grade)
+###########################################
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+if num1 > num2:
+    print("The first number is greater than the second number.")
+elif num1 < num2:
+    print("The second number is greater than the first number.")
+else:
+    print("Both numbers are equal.")
