@@ -1,0 +1,62 @@
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+
+# Looping through a string
+fruits = ["apple", "banana", "cherry"]
+for x in "banana":
+    print(x)
+
+# The break statement
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    print(x)
+    if x == "banana":
+        break
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break
+    print(x)
+
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+
+# Range() Function
+for x in range(2):
+    print(x)
+
+# adding parameters
+for x in range(2, 6):
+    print(x)
+
+# adding sequence to the parameters
+for x in range (2, 6, 3):
+    print(x)
+
+#Else in for Loop
+for x in range(6):
+    print(x)
+else:
+    print("finally finished")
+###
+for x in range(6):
+    if x == 3: break
+    print(x)
+else:
+    print("Finally finished")
+
+## Nested Loop in Python
+adj = ["red", "big", "tasty"]
+fruits = ["aaple", "banana", "cherry"]
+
+for x in adj:
+    for y in fruits:
+        print(x, y)
+
+for x in [0,1,2,3]:
+    pass
