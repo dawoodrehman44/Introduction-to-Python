@@ -1,1 +1,27 @@
+# Add 10 to argument a, and return the result:
+x = lambda a : a + 10
+print(x(10))
 
+#lambda function can take any number of arguments
+x = lambda a, b : a * b
+print(x(5, 6))
+
+# summarize argument a, b, and c and return the results
+x = lambda a, b, c : a + b + c
+print(x(5,10, 2))
+
+# lambda can be used in functions to get the best out of it
+def myfunc(n):
+    return lambda a : a * n
+
+#example
+def myfunc(n):
+    return lambda a : a * n
+mydoubler = myfunc(2)
+print(mydoubler(11))
+
+# using a function that makes every number triple
+def myfunc(n):
+    return lambda a : a * n
+my_tripler = myfunc(3)
+print(my_tripler(10))
