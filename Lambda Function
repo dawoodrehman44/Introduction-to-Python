@@ -25,3 +25,17 @@ def myfunc(n):
     return lambda a : a * n
 my_tripler = myfunc(3)
 print(my_tripler(10))
+
+# combining the above two functions
+def myfunc(n):
+    return lambda a : a * n
+mydoubler = myfunc(2)
+my_tripler = myfunc(3)
+print(mydoubler(11))
+print(my_tripler(11))
+
+#example
+print(mydoubler(10), my_tripler(10))
+
+#example
+print(mydoubler(20) + my_tripler(30))
