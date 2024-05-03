@@ -25,3 +25,16 @@ class Student(Person):
    def welcome(self):
     print("Welcome", self.firstname, self.lastname, "To the class of",
 self.graduationyear)
+
+#Example
+class Parent:
+    def __init__(self):
+        print("Parent class initialized")
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        print("Child class initialized")
+
+child = Child()
+
