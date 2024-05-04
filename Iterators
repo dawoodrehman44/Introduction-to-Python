@@ -1,0 +1,65 @@
+mytuple = ("apple", "banana", "cherry")
+myit = iter(mytuple)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+# Example - STRINGS
+mystr = "banana"
+myit = iter(mystr)
+
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+#Looping through an Iterator
+mytuple = ("apple", "banana", "cherry")
+
+for x in mytuple:
+    print(x)
+mystr = "cherry"
+for x in mystr:
+    print(x)
+
+# Create an Iterator
+#example
+class mynumbers:
+    def __iter__(self):
+        self.a = 1
+        return self
+    def __next__(self):
+        x = self.a
+        self.a += 1
+        return x
+myclass = mynumbers()
+myiter = iter(myclass)
+
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+# Stopiteration
+class mynumbers:
+    def __iter__ (self):
+        self.a = 1
+        return self
+    def __next__ (self):
+        if self.a <= 20:
+            x = self.a
+            self.a += 1
+            return x
+        else:
+            raise StopIteration
+myclass = mynumbers()
+myiter = iter(myclass)
+
+
+for x in myiter:
+    print(x)
