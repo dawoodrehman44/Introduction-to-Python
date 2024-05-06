@@ -1,0 +1,52 @@
+f = open("demofile.txt", "r")
+print(f.read())
+
+# Read only parts of the file
+f = open("demofile.txt", "r")
+print(f.read(5))
+
+# read line
+f = open("demofile.txt", "r")
+print(f.readline())
+print(f.readline())
+
+## looping through the line
+f = open("demofile.txt", "r")
+for x in f:
+    print(x)
+
+# it is a good practice to always close the file when you are done with it
+f = open("demofile.txt", "r")
+print(f.readline())
+f.close()
+
+## writing and appending to the existing file
+f = open("demofile.txt", "a")
+f.write(" Now the file has more content")
+f.close()
+
+## open and read the file after the appending
+f = open("demofile.txt", "r")
+print(f.read())
+
+## Open and overwrite the content
+f = open("demofile.txt", "w")
+f.write("Woops! I have deleted the content")
+f.close()
+
+# Open and read the file 
+f = open("demofile.txt")
+print(f.read())
+
+## Create a New File
+f = open("myfile.txt", "x")
+print(f)
+
+# Example
+f = open("myfile.txt", "a")
+f.write(" Hiii, I am Dawood")
+
+f = open("myfile.txt", "r")
+print(f.read())
+f.close()
+
