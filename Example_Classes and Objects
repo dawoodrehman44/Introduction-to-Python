@@ -40,3 +40,65 @@ my_car.read_odometer()
 # Incrementing attribute value
 my_car.increment_odometer(100)
 my_car.read_odometer()
+
+########################################################################
+class Car:
+    def __init__(self, brand, model, year):
+        self.brand = brand
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_full_name(self):
+        full_name = f"{self.year} {self.brand} {self.model}"
+        return full_name
+
+    def read_odometer(self):
+        print(f"This car has {self.odometer_reading} miles on it.")
+
+    def update_odometer(self, mileage):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("You can't roll back an odometer!")
+
+    def increment_odometer(self, miles):
+        self.odometer_reading += miles
+
+
+class ElectricCar(Car):
+    def __init__(self, brand, model, year, battery_size):
+        super().__init__(brand, model, year)
+        self.battery_size = battery_size
+
+    def describe_battery(self):
+        print(f"This car has a {self.battery_size}-kWh battery.")
+
+
+# Creating instances of the Car and ElectricCar classes
+my_car = Car("Toyota", "Corolla", 2018)
+my_friend_car = Car("Honda", "Civic", 2019)
+
+my_electric_car = ElectricCar("Tesla", "Model S", 2020, 100)
+
+# Accessing attributes and calling methods
+print("My car:", my_car.get_full_name())
+my_car.read_odometer()
+
+print("\nMy friend's car:", my_friend_car.get_full_name())
+my_friend_car.read_odometer()
+
+print("\nMy electric car:", my_electric_car.get_full_name())
+my_electric_car.read_odometer()
+my_electric_car.describe_battery()
+
+# Modifying attributes
+my_car.update_odometer(50000)
+my_car.read_odometer()
+
+# Incrementing attribute value
+my_car.increment_odometer(100)
+my_car.read_odometer()
+
+
+
