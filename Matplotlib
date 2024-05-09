@@ -47,6 +47,27 @@ ypoints = np.array([3, 8, 1, 10])
 plt.plot(xpoints, ypoints)
 plt.show()
 
+#Markers
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(ypoints, marker = "o")
+plt.show()
+
+plt.plot(ypoints, marker = "*")
+
+ypoints = np.array([3, 8, 1, 10])
+print(ypoints)
+
+#Markers
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints = np.array([3, 8, 1, 10])
+plt.plot(ypoints, marker = "o", ms = 20, mec = "hotpink", mfc="hotpink")
+plt.show()
+
+
 
 
 
