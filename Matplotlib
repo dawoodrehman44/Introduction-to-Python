@@ -1,0 +1,52 @@
+import matplotlib
+print(matplotlib.__version__)
+
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([0, 6])
+ypoints = np.array([0, 258])
+plt.plot(xpoints, ypoints)
+plt.show()
+
+# Example
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1,3])
+ypoints = np.array([3, 10])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+
+## Plotting without line
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1, 8])
+ypoints = np.array([3, 8])
+
+plt.plot(xpoints, ypoints, "o")
+plt.show()
+
+## Multiple Points/Lines
+import matplotlib.pyplot as plt
+import numpy as np
+
+xpoints = np.array([1, 2, 6, 8])
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+
+## DEfault x points
+import matplotlib.pyplot as plt
+import numpy as np
+ypoints = np.array([3, 8, 1, 10])
+
+plt.plot(xpoints, ypoints)
+plt.show()
+
+
+
+
