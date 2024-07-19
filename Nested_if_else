@@ -1,0 +1,30 @@
+# appleprice = 10
+# budget = 200
+# if (budget - appleprice > 50):
+#   print("Alexa, add 1kg Apples")
+# elif (budget - appleprice > 70):
+#   print("Its okay you can buy")
+# else:
+#   print("Alexa, do not buy apples")
+
+# # Checking the number
+# num = int(input("Enter your good number: "))
+# if (num < 0):
+#   print("Your given number is negative")
+# elif (num == 0):
+#   print("your given number is zero")
+# else:
+#   print("your given number is positive")
+
+num = int(input("Enter your number: "))
+if (num < 0):
+    print("Number is negative")
+elif(num > 0):
+    if (num <= 10):
+        print("Number is between 1-10")
+    elif(num > 10 and num <= 20):
+        print("Number is between 11-20")
+    else:
+        print("Number is bigger")
+else:
+    print("Number is zero")
